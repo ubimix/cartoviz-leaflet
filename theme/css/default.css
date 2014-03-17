@@ -235,7 +235,7 @@ slide.fill img {
 
 /* line 58, ../scss/default.scss */
 body {
-  background: black;
+  background: gray;
 }
 
 /* line 62, ../scss/default.scss */
@@ -305,7 +305,7 @@ slides > slide:not(.nobackground):before {
   position: absolute;
   bottom: 20px;
   left: 60px;
-  background: url(../../images/google_developers_icon_128.png) no-repeat 0 50%;
+  background: url(../../images/cartoviz-pin-128.png) no-repeat 0 50%;
   -webkit-background-size: 30px 30px;
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
@@ -1211,8 +1211,7 @@ article.smaller q:before, article.smaller q:after {
 /* ===== SLIDE CONTENT ===== */
 /* line 803, ../scss/default.scss */
 .logoslide img {
-  width: 383px;
-  height: 92px;
+  width: 350px;
 }
 
 /* line 809, ../scss/default.scss */
@@ -1315,11 +1314,9 @@ aside.gdbar.bottom {
 }
 /* line 877, ../scss/default.scss */
 aside.gdbar img {
-  width: 85px;
-  height: 85px;
   position: absolute;
   right: 0;
-  margin: 8px 15px;
+  margin: 24px 15px;
 }
 
 /* line 888, ../scss/default.scss */
