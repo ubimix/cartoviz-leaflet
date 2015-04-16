@@ -2,7 +2,7 @@ var SLIDE_CONFIG = {
   // Slide settings
   settings: {
     title: 'Atelier WeViz',
-    subtitle: 'Présentation de Leaflet',
+    subtitle: 'Présentation de Leaflet et D3',
     //eventInfo: {
     //  title: 'Google I/O',
     //  date: '6/x/2013'

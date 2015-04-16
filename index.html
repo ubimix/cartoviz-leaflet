@@ -39,9 +39,36 @@ URL: https://code.google.com/p/io-2012-slides
 	</hgroup>
 	</slide> <!-- --> <slide>
 	<hgroup>
-		<h2>Introduction</h2>
+		<h2>Agenda</h2>
 	</hgroup>
 	<article>
+		<ul>
+			<li>Présentation de Leaflet</li>
+			<li>Présentation de D3</li>
+			<li>Combinaison de Leaflet et D3</li>
+		</ul>
+
+	</article>
+	</slide> <slide>
+	<hgroup>
+		<h2></h2>
+	</hgroup>
+	<article>
+		<span><img src="images/leaflet.png"></span>
+		</p>
+		<p>
+			<a href="http://leafletjs.com/">http://leafletjs.com/</a>
+		</p>
+
+	</article>
+	</slide> <slide>
+	<hgroup>
+		<h2>
+			<img src="images/leaflet.png">
+		</h2>
+	</hgroup>
+	<article>
+		<h3>Fonctions et API</h3>
 		<ul>
 			<li>Alternative libre à Google Maps JS</li>
 			<li>Simplicité à l'intérieur / à l'extérieur</li>
@@ -49,79 +76,38 @@ URL: https://code.google.com/p/io-2012-slides
 			<li>Multi-devices / standalone</li>
 		</ul>
 
-		<p>
-			<span><img src="images/leaflet.png"></span>
-		</p>
-		<p>
-			<a href="http://leafletjs.com/">http://leafletjs.com/</a>
-		</p>
-
-	</article>
-	</slide> <!-- --> <slide>
-	<hgroup>
-		<h2>Principes</h2>
-	</hgroup>
-	<article>
+		<h3>Interactivité</h3>
 		<ul>
 			<li>Fond de carte (tuiles avec design personnalisé)</li>
 			<li>Interactivité (zoom, pan, click)</li>
 			<li>Figures géométriques (points, lignes, polygones)</li>
 		</ul>
+
 	</article>
+
 	</slide> <!-- --> <slide>
 	<hgroup>
-		<h2>Écosystème de Leaflet</h2>
+		<h2>
+			<img src="images/leaflet.png">
+		</h2>
+		<h3>Ecosystème</h3>
 	</hgroup>
 	<article>
 		<ul>
-			<li>Plugins</li>
-			<li>Acteurs</li>
-			<li>Utilisateurs</li>
+			<li>Mapbox, CartoDB</li>
+			<li>Foursquare, Evernote</li>
+			<li>Nombreux plugins</li>
 		</ul>
+
+
+
 	</article>
 	</slide> <!-- --> <slide>
 	<hgroup>
-		<h2>Écosystème de Leaflet</h2>
-		<h3>Plugins</h3>
-	</hgroup>
-	<article>
-		<ul>
-			<li>Gestion de données : transformation, projection,
-				geocoding...</li>
-			<li>Visualisation : clusters, popups, 3D...
-			<li>Comportement : loading, URLs, édition, mesures...</li>
-			<li>Intégration de Leaflet avec services externes : routing,
-				UTF-grid, ...
-		</ul>
-	</article>
-	</slide> <!-- --> <slide>
-	<hgroup>
-		<h2>Écosystème de Leaflet</h2>
-		<h3>Acteurs</h3>
-	</hgroup>
-	<article>
-		<ul>
-			<li>Mapbox</li>
-			<li>CartoDB</li>
-			<li>Stamen</li>
-		</ul>
-	</article>
-	</slide> <!-- --> <slide>
-	<hgroup>
-		<h2>Écosystème de Leaflet</h2>
-		<h3>Utilisateurs</h3>
-	</hgroup>
-	<article>
-		<ul>
-			<li>OpenStreetMap</li>
-			<li>Foursquare</li>
-			<li>Evernote</li>
-		</ul>
-	</article>
-	</slide> <!-- --> <slide>
-	<hgroup>
-		<h2>Exemples</h2>
-		<h3>Afficher un fond de carte</h3>
+		<h2>
+			<img src="images/leaflet.png">
+		</h2>
+		<h3>Exemple : afficher un fond de carte</h3>
 	</hgroup>
 	<article>
 
@@ -137,8 +123,10 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	</article>
 	</slide> <!-- --> <slide>
 	<hgroup>
-		<h2>Exemples</h2>
-		<h3>Ajouter un marqueur</h3>
+		<h2>
+			<img src="images/leaflet.png">
+		</h2>
+		<h3>Exemple : ajouter un marqueur</h3>
 	</hgroup>
 	<article>
 
@@ -163,8 +151,10 @@ marker.bindPopup("&lt;b>I am here !&lt;/b>.").openPopup();
 	</article>
 	</slide> <!-- --> <slide>
 	<hgroup>
-		<h2>Exemples</h2>
-		<h3>Clusteriser des données GeoJSON</h3>
+		<h2>
+			<img src="images/leaflet.png">
+		</h2>
+		<h3>Exemple : clusteriser des données GeoJSON</h3>
 	</hgroup>
 	<article>
 
@@ -188,26 +178,116 @@ map.addLayer(markers);
 	</article>
 	</slide> <!-- --> <slide>
 	<hgroup>
-		<h2>Démo : Carte des musées en ÎdF</h2>
-		<h3>Données : data.gouv.fr</h3>
+		<h2>
+			<img src="images/leaflet.png">
+		</h2>
+		<h3>Exemple : carte des musées de Paris</h3>
 	</hgroup>
 	<article style="margin-top: 0px;">
 		<iframe data-src="./demo/index.html"></iframe>
 	</article>
-	</slide> <!-- --> <slide style="background-image:url(./images/scifitiles.png);">
+	</slide> <slide>
 	<hgroup>
-		<h2 style="color: white;">Next steps</h2>
-
+		<h2>
+			<img src="images/d3.jpg">
+		</h2>
 	</hgroup>
 	<article>
 
-		<ul style="color: white;">
-			<li>Mapbox : fond de carte customisé</li>
-			<li>CartoDB : gestion de données en Cloud</li>
+		<p>Librairie développée par le New-York Times pour créer dataviz
+			et webdocs.</p>
+
+		<h3>Principales fonctions</h3>
+		<ul>
+			<li>Création de graphiques SVG</li>
+			<li>Traitement et transformation de données</li>
+			<li>Effets dynamiques : zoom, timeline, transitions, changement
+				d'échelle, ...</li>
+
+		</ul>
+
+		<h3>Nombreuses extensions</h3>
+		<ul>
+			<li>Traitement de données géo, projections</li>
+			<li>Créations de cartes choroplètes</li>
 		</ul>
 
 	</article>
-	</slide> <!-- --> <slide class="thank-you-slide segue nobackground">
+	</slide> <slide>
+	<hgroup>
+		<h2>
+			<img src="images/d3.jpg">
+		</h2>
+		<h3>Exemple : données géographiques</h3>
+	</hgroup>
+	<article></article>
+	</slide> <slide>
+	<hgroup>
+		<h2>
+			<img src="images/d3.jpg">
+		</h2>
+		<h3>Exemple : dataviz</h3>
+	</hgroup>
+	<article></article>
+	</slide> <slide>
+	<hgroup>
+		<h2>Combinaison de Leaflet et de D3</h2>
+	</hgroup>
+	<article>
+
+		<ul>
+			<li>Leaflet pour gérer le fond de carte et les données
+				géolocalisées</li>
+			<li>D3 pour animer et expliquer les données : statistiques,
+				dataviz</li>
+		</ul>
+
+
+<h3>3 modes d'utilisation de D3 avec Leaflet :</h3>
+<ul>
+            <li>Comme librairie de pré-traitement des données</li>
+            <li>En couche séparée pour animer les éléments individuels sur Leaflet</li>
+            <li>D3 pour visualiser les données</li>
+     
+</ul>
+	</article>
+	</slide>
+	
+<slide>
+    <hgroup>
+        <h2>Combinaison de Leaflet et de D3</h2>
+        <h3>Exemple : gestion de données par D3 et visualisées avec Leaflet</h3>
+    </hgroup>
+    <article>
+
+    </article>
+    </slide>
+        
+	
+<slide>
+    <hgroup>
+        <h2>Combinaison de Leaflet et de D3</h2>
+        <h3>Exemple : animation de données sur une carte</h3>
+    </hgroup>
+    <article>
+
+    </article>
+    </slide>
+    	
+<slide>
+    <hgroup>
+        <h2>Combinaison de Leaflet et de D3</h2>
+        <h3>Exemple : transformation de données par D3 et affichées par Leaflet</h3>
+    </hgroup>
+    <article>
+
+    </article>
+    </slide>
+        
+    	
+	
+	
+	<!-- --> <slide class="thank-you-slide segue nobackground">
 	<aside class="gdbar right"></aside>
 	<article class="flexbox vleft auto-fadein">
 		<h2>Merci !</h2>
