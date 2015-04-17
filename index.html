@@ -21,6 +21,16 @@ URL: https://code.google.com/p/io-2012-slides
 <base target="_blank">
 <!-- This amazingness opens all links in a new tab. -->
 <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+<style>
+iframe {
+	position: absolute;
+	top: 150px;
+	left: 0px;
+	right: 0px;
+	height-min: 250px;
+	bottom: 220px;
+}
+</style>
 </head>
 <body style="opacity: 0">
 
@@ -47,19 +57,6 @@ URL: https://code.google.com/p/io-2012-slides
 			<li>Présentation de D3</li>
 			<li>Combinaison de Leaflet et D3</li>
 		</ul>
-
-	</article>
-	</slide> <slide>
-	<hgroup>
-		<h2></h2>
-	</hgroup>
-	<article>
-		<span><img src="images/leaflet.png"></span>
-		</p>
-		<p>
-			<a href="http://leafletjs.com/">http://leafletjs.com/</a>
-		</p>
-
 	</article>
 	</slide> <slide>
 	<hgroup>
@@ -68,15 +65,15 @@ URL: https://code.google.com/p/io-2012-slides
 		</h2>
 	</hgroup>
 	<article>
-		<h3>Fonctions et API</h3>
+		<h3>Fonctions et API :</h3>
 		<ul>
 			<li>Alternative libre à Google Maps JS</li>
 			<li>Simplicité à l'intérieur / à l'extérieur</li>
 			<li>Noyau + extensions</li>
-			<li>Multi-devices / standalone</li>
+			<li>Multi-devices &#150; téléphones / tablets / desktops</li>
 		</ul>
 
-		<h3>Interactivité</h3>
+		<h3>Interactivité :</h3>
 		<ul>
 			<li>Fond de carte (tuiles avec design personnalisé)</li>
 			<li>Interactivité (zoom, pan, click)</li>
@@ -98,9 +95,6 @@ URL: https://code.google.com/p/io-2012-slides
 			<li>Foursquare, Evernote</li>
 			<li>Nombreux plugins</li>
 		</ul>
-
-
-
 	</article>
 	</slide> <!-- --> <slide>
 	<hgroup>
@@ -110,7 +104,6 @@ URL: https://code.google.com/p/io-2012-slides
 		<h3>Exemple : afficher un fond de carte</h3>
 	</hgroup>
 	<article>
-
 		<pre class="prettyprint" data-lang="javascript">
 &lt;script type='text/javascript'&gt;
 var map = L.map('map').setView([ 48.86167, 2.33314], 13);
@@ -129,7 +122,6 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		<h3>Exemple : ajouter un marqueur</h3>
 	</hgroup>
 	<article>
-
 		<pre class="prettyprint" data-lang="javascript">
 &lt;script type='text/javascript'&gt;
  var marker = L.marker([ 48.86167, 2.33314]).addTo(map);
@@ -142,7 +134,6 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		<h3>Ajouter un popup</h3>
 	</hgroup>
 	<article>
-
 		<pre class="prettyprint" data-lang="javascript">
 &lt;script type='text/javascript'&gt;
 marker.bindPopup("&lt;b>I am here !&lt;/b>.").openPopup();
@@ -157,7 +148,6 @@ marker.bindPopup("&lt;b>I am here !&lt;/b>.").openPopup();
 		<h3>Exemple : clusteriser des données GeoJSON</h3>
 	</hgroup>
 	<article>
-
 		<pre class="prettyprint" data-lang="javascript">
 &lt;script type='text/javascript'&gt;
 var DATA = {"type": "FeatureCollection","features":[
@@ -183,17 +173,25 @@ map.addLayer(markers);
 		</h2>
 		<h3>Exemple : carte des musées de Paris</h3>
 	</hgroup>
-	<article style="margin-top: 0px;">
+	<article>
+		<h1>Next slide, please &raquo;</h1>
+	</article>
+	</slide> <!-- --- --> <slide>
+	<hgroup>
+		<h2>
+			<img src="images/leaflet.png">
+		</h2>
+	</hgroup>
+	<article>
 		<iframe data-src="./demo/index.html"></iframe>
 	</article>
-	</slide> <slide>
+	</slide> <!-- --- --> <slide>
 	<hgroup>
 		<h2>
 			<img src="images/d3.jpg">
 		</h2>
 	</hgroup>
 	<article>
-
 		<p>Librairie développée par le New-York Times pour créer dataviz
 			et webdocs.</p>
 
@@ -203,91 +201,115 @@ map.addLayer(markers);
 			<li>Traitement et transformation de données</li>
 			<li>Effets dynamiques : zoom, timeline, transitions, changement
 				d'échelle, ...</li>
-
 		</ul>
 
 		<h3>Nombreuses extensions</h3>
 		<ul>
 			<li>Traitement de données géo, projections</li>
 			<li>Créations de cartes choroplètes</li>
+			<li>Créations de diagrammes, des chartes etc</li>
 		</ul>
-
 	</article>
 	</slide> <slide>
 	<hgroup>
 		<h2>
 			<img src="images/d3.jpg">
 		</h2>
-		<h3>Exemple : données géographiques</h3>
+		<h3>Examples d'usages</h3>
 	</hgroup>
-	<article></article>
-	</slide> <slide>
-	<hgroup>
-		<h2>
-			<img src="images/d3.jpg">
-		</h2>
-		<h3>Exemple : dataviz</h3>
-	</hgroup>
-	<article></article>
-	</slide> <slide>
+	<article>
+		<p>
+			Source d'inspirations : <a href="http://bost.ocks.org/mike/">site
+				de Mike Bostok</a>
+		</p>
+		<ul>
+			<li><strong>Territory explained</strong>: "<a
+				href="http://www.nytimes.com/interactive/2014/09/19/nyregion/stop-and-frisk-is-all-but-gone-from-new-york.html">The
+					‘Stop-and-Frisk’ Is All but Gone From New York</a>"
+			<li><strong>Comparative maps</strong>: <a
+				href="http://www.nytimes.com/interactive/2014/09/19/nyregion/stop-and-frisk-map.html">NYT:
+					Mapping the Decline of ‘Stop-and-Frisk’</a> comparision 2012 / 2013</li>
+			<li><strong>Animated timelines</strong>: <a
+				href="http://www.nytimes.com/interactive/2014/upshot/mapping-the-spread-of-drought-across-the-us.html">Mapping
+					the Spread of Drought Across the U.S.</a>
+			<li><strong>Storytelling</strong>: <a
+				href="http://www.nytimes.com/newsgraphics/2013/10/27/south-china-sea/">A
+					Game of Shark and Minnow</a></li>
+			<li><strong>Storytelling on maps</strong>: <a
+				href="http://www.nytimes.com/newsgraphics/2013/10/13/russia/">The
+					Russia Left Behind</a></li>
+		</ul>
+		<ul>
+			<li><strong>iD</strong> &#150; <a href="http://ideditor.com/">OpenStreetMap
+					editor</a>
+		</ul>
+	</article>
+	</slide> <!-- --- --> <slide>
 	<hgroup>
 		<h2>Combinaison de Leaflet et de D3</h2>
 	</hgroup>
 	<article>
-
 		<ul>
 			<li>Leaflet pour gérer le fond de carte et les données
 				géolocalisées</li>
 			<li>D3 pour animer et expliquer les données : statistiques,
 				dataviz</li>
 		</ul>
-
-
-<h3>3 modes d'utilisation de D3 avec Leaflet :</h3>
-<ul>
-            <li>Comme librairie de pré-traitement des données</li>
-            <li>En couche séparée pour animer les éléments individuels sur Leaflet</li>
-            <li>D3 pour visualiser les données</li>
-     
-</ul>
+		<h3>3 modes d'utilisation de D3 avec Leaflet :</h3>
+		<ul>
+			<li>Comme librairie de pré-traitement des données</li>
+			<li>Comme un outil d'animation des éléments individuels sur
+				Leaflet</li>
+			<li>D3 pour visualiser les données</li>
+		</ul>
 	</article>
-	</slide>
-	
-<slide>
-    <hgroup>
-        <h2>Combinaison de Leaflet et de D3</h2>
-        <h3>Exemple : gestion de données par D3 et visualisées avec Leaflet</h3>
-    </hgroup>
-    <article>
-
-    </article>
-    </slide>
-        
-	
-<slide>
-    <hgroup>
-        <h2>Combinaison de Leaflet et de D3</h2>
-        <h3>Exemple : animation de données sur une carte</h3>
-    </hgroup>
-    <article>
-
-    </article>
-    </slide>
-    	
-<slide>
-    <hgroup>
-        <h2>Combinaison de Leaflet et de D3</h2>
-        <h3>Exemple : transformation de données par D3 et affichées par Leaflet</h3>
-    </hgroup>
-    <article>
-
-    </article>
-    </slide>
-        
-    	
-	
-	
-	<!-- --> <slide class="thank-you-slide segue nobackground">
+	</slide> <!-- --- --> <slide>
+	<hgroup>
+		<h2>Combinaison de Leaflet et de D3</h2>
+		<h3>Gestion de données par D3 et visualisées avec Leaflet &#150;
+			part 1</h3>
+	</hgroup>
+	<article>
+		<h3>"Very quick template for leaflet maps"</h3>
+		<ul>
+			<li>GitHub page: <a
+				href="https://github.com/calvinmetcalf/psychic-octo-nemesis">https://github.com/calvinmetcalf/psychic-octo-nemesis</a>
+			</li>
+			<li>Demo: <a
+				href="http://calvinmetcalf.github.io/psychic-octo-nemesis/">http://calvinmetcalf.github.io/psychic-octo-nemesis/</a>
+				<br /> (See also the next slide...)
+			</li>
+		</ul>
+	</article>
+	</slide> <!-- --- --> <slide>
+	<hgroup>
+		<h2>Combinaison de Leaflet et de D3</h2>
+		<h3>Gestion de données par D3 et visualisées avec Leaflet &#150;
+			part 2</h3>
+	</hgroup>
+	<article>
+		<h3>Use the amazing D3 library to animate a path on a Leaflet map</h3>
+		<p>(A tutorial)</p>
+		<p>
+			URL: <a href="http://calvinmetcalf.github.io/psychic-octo-nemesis/">http://calvinmetcalf.github.io/psychic-octo-nemesis/</a>
+		</p>
+		<p>
+			<iframe
+				data-src="http://calvinmetcalf.github.io/psychic-octo-nemesis/"></iframe>
+		</p>
+	</article>
+	</slide> <!-- --- --> <slide>
+	<hgroup>
+		<h2>Combinaison de Leaflet et de D3</h2>
+		<h3>D3 pour animer de données sur une carte</h3>
+	</hgroup>
+	<article>
+		<p>
+			<a
+				href="http://zevross.com/blog/2014/09/30/use-the-amazing-d3-library-to-animate-a-path-on-a-leaflet-map/">Use
+				the amazing D3 library to animate a path on a Leaflet map</a>
+	</article>
+	</slide> <!-- --- --> <slide class="thank-you-slide segue nobackground">
 	<aside class="gdbar right"></aside>
 	<article class="flexbox vleft auto-fadein">
 		<h2>Merci !</h2>
